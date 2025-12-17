@@ -9,7 +9,7 @@
     "start:prod": "node dist/main",
     "lt": "lt --port 3000 --subdomain ваш-уникальный-домен",
     "dev": "concurrently \"npm run start:dev\" \"npm run lt\"",
-    "build": "nest build",
+    "build": "npx @nestjs/cli build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
